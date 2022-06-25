@@ -167,6 +167,7 @@
 .method {
     margin-left: 30px;
     width: 270px;
+    letter-spacing: 0.03em;
 }
 .method:first-child {
     margin-left: 0px;
@@ -184,12 +185,13 @@
 }
 .paragraph {
     font-family: var(--font-family-roboto);
-    font-size: var(--text-size);
+    font-size: 0.875em;
     color: var(--p-color);
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.03em;
+    
 }
 .what-we-do {
     text-align: center;
