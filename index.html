@@ -12,7 +12,8 @@
   <title>Студія</title>
 </head>
 <body class="body">
-  <header class="header">
+  <div class="wraper">
+    <header class="header">
     <a href="#" class="title-logo"><span class="logo-dot">Web</span><span class="logo-dot2">Studio</span></a>
     <nav class="navigation">
       <ul class="list navigation">
@@ -27,11 +28,11 @@
         </li>
       </ul>
     </nav>
-    <ul class="list contact-box contacts">
-      <li><a class="contact-email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      <li><a class="contact-phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
+    <ul class="list  contacts">
+      <li class="contact-border"><a class="contacts-box mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      <li class="contact-border"><a class="contacts-box phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
     </ul>
-  </header>
+    </header>
   <main>
     <section class="background">
       <h1 class="hero">Ефективні рішення для вашого бізнесу</h1>
@@ -40,28 +41,28 @@
     <section>
       <h2 class="method-title" hidden>Методи</h2>
       <ul class="list-method">
-        <li class="list method1">
+        <li class="list method">
           <h3 class="method-title">Увага до деталей</h3>
           <p class="paragraph">
             Ідейні міркування, а також початок повсякденної роботи з
             формування позиції.
           </p>
         </li>
-        <li class="list method2">
+        <li class="list method">
           <h3 class="method-title">Пунктуальність</h3>
           <p class="paragraph">
             Завдання організації, особливо ж рамки та місце навчання кадрів
             тягне за собою.
           </p>
         </li>
-        <li class="list method3">
+        <li class="list method">
           <h3 class="method-title">Планування</h3>
           <p class="paragraph">
             Також консультація з широким активом у значній
             ступеня зумовлює.
           </p>
         </li>
-        <li class="list method4">
+        <li class="list method">
           <h3 class="method-title">Сучасні технології</h3>
           <p class="paragraph">
             Значимість цих проблем настільки очевидна, що реалізація
@@ -71,16 +72,16 @@
       </ul>
     </section>
     <section>
-      <h2 class="what-we-do">Чим ми займаємся</h2>
+      <h2 class="what-we-do">Чим ми займаємося</h2>
       <ul class="list activity">
         <li class="activity-link1">
-          <img class="activity-img" src="./images/personalcomputer.jpg" alt="personalcomputer" width="370"/>
+          <img class="activity-img" src="./images/personalcomputer.jpg" alt="personalcomputer" width="370" />
         </li>
         <li class="activity-link2">
-          <img class="activity-img" src="./images/laptop.jpg" alt="laptop" width="370"/>
+          <img class="activity-img" src="./images/laptop.jpg" alt="laptop" width="370" />
         </li>
         <li class="activity-link3">
-          <img class="activity-img" src="./images/tablet.jpg" alt="tablet" width="370"/>
+          <img class="activity-img" src="./images/tablet.jpg" alt="tablet" width="370" />
         </li>
       </ul>
     </section>
@@ -88,43 +89,46 @@
       <h2 class="our-team">Наша команда</h2>
       <ul class="list team">
         <li class="box1">
-          <img class="team-img" src="./images/IgorD.jpg" alt="IgorD" width="270"/>
+          <img class="team-img" src="./images/IgorD.jpg" alt="IgorD" width="270" />
           <h3 class="team-name">Ігор Демяненко</h3>
           <p class="team-work" lang="en">Product Designer</p>
         </li>
         <li class="box2">
-          <img class="team-img" src="./images/OlyaR.jpg" alt="OlyaR" width="270"/>
+          <img class="team-img" src="./images/OlyaR.jpg" alt="OlyaR" width="270" />
           <h3 class="team-name">Ольга Репіна</h3>
           <p class="team-work" lang="en">Frontend Developer</p>
         </li>
         <li class="box3">
-          <img class="team-img" src="./images/MykolaT.jpg" alt="MykolaT" width="270"/>
+          <img class="team-img" src="./images/MykolaT.jpg" alt="MykolaT" width="270" />
           <h3 class="team-name">Микола Тарасов</h3>
           <p class="team-work" lang="en">Marketing</p>
         </li>
         <li class="box4">
-          <img class="team-img" src="./images/MykhailoE.jpg" alt="MykhayloE" width="270"/>
+          <img class="team-img" src="./images/MykhailoE.jpg" alt="MykhayloE" width="270" />
           <h3 class="team-name">Михаило Єрмаков</h3>
           <p class="team-work" lang="en">UI Designer</p>
         </li>
       </ul>
     </section>
   </main>
-  <footer>
-    <a href="#" class="title-logo"><span>Web</span>Studio</a>
-    <address>
+  <footer class="footer">
+    <div class="footer-title">
+      <a href="#" class="title-logo"><span class="logo-dot">Web</span><span class="logo-dot3">Studio</span></a>
+    </div>
+        <address>
       <ul class="list info">
         <li class="info-adress">
-          <a href="https://goo.gl/maps/uCXiMjxYDUg4KGho7">м. Київ, просп. Лесі Українки, 26</a>
+          <a class="location" href="https://goo.gl/maps/uCXiMjxYDUg4KGho7">м. Київ, просп. Лесі Українки, 26</a>
         </li>
         <li class="info-email">
-          <a href="mailto:info@example.com">info@example.com</a>
+          <a class="mail paragraph" href="mailto:info@example.com">info@example.com</a>
         </li>
         <li class="info-phone">
-          <a href="tel:+380991111111">+38 099 111 11 11</a>
+          <a class="call paragraph" href="tel:+380991111111">+38 099 111 11 11</a>
         </li>
       </ul>
     </address>
   </footer>
+</div>
 </body>
 </html>

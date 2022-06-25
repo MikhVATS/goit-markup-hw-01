@@ -4,7 +4,8 @@
     --accent-color: #2196F3 ;
     --common-white: #FFFFFF ;
     --p-color: #757575;
-    --text-size: 14px;
+    --text-size: 1.000em;
+    --font-family-roboto: 'Roboto';
 }
 * {
     box-sizing: border-box;
@@ -13,19 +14,36 @@
     margin: 0;
     padding: 0;
 }
+.wraper {
+    align-items: center;
+    margin-left: 10%;
+    position: absolute;
+    background-color: var();
+}
 .list {
     list-style: none;
 }
+.header,
+.team,
+.list-method,
+.contacts,
+.contact-border,
+.navigation,
+.activity {
+    display: flex;
+}
 .body {
+    position: relative;
     width: 1600px;
     height: 2350px;
+    background: var(--common-white);
+    font-family: var(--font-family-roboto);
 }
 .header {
+    padding: 0px 215px 0px 215px;
     width: 1600px;
     height: 80px;
-    margin: 0 auto;
     background-color: var(--common-white);
-    display: flex;
 }
 .title-logo,
 .logo-dot {
@@ -35,7 +53,7 @@
     text-decoration: none;
 }
 .title-logo {
-    margin: 27px 215px 24px 93px;
+    margin: 27px 90px 24px 0px;
     Width: 145px;
     Height: 31px;
 }
@@ -45,8 +63,8 @@
 .logo-dot2{
     color: var(--secondary-color);
 }
-.navigation {
-    display: flex;
+.logo-dot3 {
+    color: var(--common-white);
 }
 .navigation-list1 {
     margin: 32px 25px 32px 0px;
@@ -56,11 +74,10 @@
 }
 .navigation-list3 {
     margin: 32px 0px 32px 25px;
-
 }
 .navigation-link {
     text-decoration: none;
-    font-family: 'Roboto';
+    font-family: var(--font-family-roboto);
     font-style: normal;
     font-weight: 500;
     font-size: var(--text-size);
@@ -69,32 +86,39 @@
     
 }
 .contacts {
-    display: flex;
-    margin: 32px 215px 32px 330px;
-    font-family: 'Roboto';
-    font-style: normal;
+    margin: 32px 0px 32px 270px;
+    font-family: var(--font-family-roboto);
+    font-size: var(--text-size);
+}
+.contact-border:first-child {
+    margin-right: 50px;
+}
+.mail {
+    margin-right: 13px;
+}
+.phone {
+    margin-left: 0px;
+}
+.contacts-box{
+    text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    
-}
-.contact-box {
-    width: 310px;
-    margin-left: 32px 215px 32px 330px;
-}
-.contact-phone {
+    font-size: var(--text-size);
     color: var(--secondary-color);
-    text-decoration: none;
-    margin-left: 50px;
-
+    font-family: var(--font-family-roboto);
 }
-.contact-email{
+.navigation-link {
     color: var(--secondary-color);
-    text-decoration: none;
+}
+.contacts-box:hover,
+.navigation-link:hover {
+    color: var(--accent-color);
+}
+.contacts-box:focus,
+.navigation-link:focus {
+    color: var(--accent-color);
 }
 .background {
-    position: absolute;
+    align-items: center;
     width: 1600px;
     height: 600px;
     left: 0px;
@@ -108,7 +132,7 @@
     height: 120px;
     left: 452px;
     top: 200px;
-    font-family: 'Roboto';
+    font-family: var(--font-family-roboto);
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -130,7 +154,7 @@
     border: 1px solid #000000
 }
 .text-button {
-    font-family: 'Roboto';
+    font-family: var(--font-family-roboto) ;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -140,62 +164,34 @@
 .list-method {
     height: 100px;
     width: 1170px;
-    margin: 700px 215px 94px 215px;
-    display: flex;
+    margin: 95px 215px 94px 215px;
 }
-.method1 {
-    position: absolute;
-    width: 270px;
-    height: 101px;
-    left: 215px;
-    top: 774px;
-}
-.method2 {
-    position: absolute;
-    width: 270px;
-    height: 101px;
-    left: 515px;
-    top: 774px;
-}
-.method3 {
-    position: absolute;
-    width: 270px;
-    height: 101px;
-    left: 815px;
-    top: 774px;
-}
-.method4 {
-    position: absolute;
-    width: 270px;
-    height: 101px;
-    left: 1115px;
-    top: 774px;
+.method {
+    margin-left: 30px;
 }
 .method-title {
-    font-family: 'Roboto';
+    font-family: var(--font-family-roboto);
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: var(--text-size);
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--secondary-color);
+    margin-bottom: 10px;
 }
 .paragraph {
-    font-family: 'Roboto';
+    font-family: var(--font-family-roboto);
+    font-size: var(--text-size);
+    color: var(--p-color);
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: var(--p-color);
-}
-.activity {
-    display: flex;
 }
 .what-we-do {
     text-align: center;
-    font-family: 'Roboto';
+    font-family: var(--font-family-roboto);
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -220,7 +216,7 @@
 }
 .our-team {
     padding-top: 95px;
-    font-family: 'Roboto';
+    font-family: var(--font-family-roboto);
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -233,7 +229,6 @@
 .team {
     height: 370px;
     width: 1170px;
-    display: flex;
     padding: 0px 215px 95px 215px;
 }
 .box1 {
@@ -278,7 +273,7 @@
 }
 .team-name {
     padding-top: 30px;
-    font-family: 'Roboto';
+    font-family: var(--font-family-roboto);
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -288,7 +283,7 @@
 }
 .team-work {
     padding-top: 10px;
-    font-family: 'Roboto';
+    font-family: var(--font-family-roboto);
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -296,4 +291,46 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--p-color);
+}
+.footer {
+    Width: 1600px;
+    Height: 252px;
+    background-color: var(--secondary-color);
+}
+.footer-title {
+    padding: 60px 0px 20px 0px;
+    margin-left: 215px;
+}
+.info-adress,
+.info-email,
+.info-phone {
+    margin-left: 215px;
+    padding-bottom: 9px;
+    text-decoration: none;
+}
+.location{
+    color: var(--common-white);
+    font-family: var(--font-family-roboto);
+    font-size: var(--text-size);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.location:hover {
+    color: var(--accent-color);
+}
+.mail,
+.call {
+    text-decoration: none;
+}
+.mail:hover,
+.call:hover {
+    color: var(--accent-color);
+}
+.mail:focus,
+.call:focus {
+    color: var(--accent-color);
 }
