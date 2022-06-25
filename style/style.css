@@ -162,12 +162,14 @@
     color: var(--common-white);
 }
 .list-method {
-    height: 100px;
-    width: 1170px;
     margin: 95px 215px 94px 215px;
 }
 .method {
     margin-left: 30px;
+    width: 270px;
+}
+.method:first-child {
+    margin-left: 0px;
 }
 .method-title {
     font-family: var(--font-family-roboto);
